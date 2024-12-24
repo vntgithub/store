@@ -23,5 +23,8 @@ module Store
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Set the default locale to :en (or your desired locale)
+    config.i18n.default_locale = :en
   end
 end
