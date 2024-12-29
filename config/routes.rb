@@ -20,8 +20,4 @@ Rails.application.routes.draw do
   end
 
   resource :unsubscribe, only: [ :show ]
-
-
-  # resources :unsubscribes, only: [ :show ], param: :token
-  # get "unsubscribe/:token", to: "unsubscribes#show", as: "unsubscribe"
 end
