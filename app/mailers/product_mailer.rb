@@ -4,6 +4,7 @@ class ProductMailer < ApplicationMailer
   #
   #   en.product_mailer.in_stock.subject
   #
+
   def in_stock
     @product = params[:product]
     @subscriber = params[:subscriber]

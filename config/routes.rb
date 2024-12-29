@@ -16,8 +16,12 @@ Rails.application.routes.draw do
   root "products#index"
 
   resources :products do
-    resources :subscribers, only: [ :create ] do
-      resource :unsubscribes, only: [ :show ]
-    end
+    resources :subscribers, only: [ :create ]
   end
+
+  resource :unsubscribe, only: [ :show ]
+
+
+  # resources :unsubscribes, only: [ :show ], param: :token
+  # get "unsubscribe/:token", to: "unsubscribes#show", as: "unsubscribe"
 end
